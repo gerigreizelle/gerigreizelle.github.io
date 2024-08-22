@@ -1,11 +1,90 @@
 body{
     background-color: #604f71;
+    /* display: flex; */
+    /* align-content: flex-start; */
+    /* flex-direction: row; */
+    /* justify-content: space-around; */
+    /* flex-wrap: wrap; */
+    /* gap: 10px; */
 }
 
 h1{
     color: white;
+    display: inline-block;
 }
 
 p{
     color: pink;
+    margin-top: 1000px;
+    /* position: absolute;
+    top: 1000px; */
+}
+
+.cont1 {
+    width: 100dvw;
+    height: 700px;
+    background-color: blue;
+}
+.rect1 {
+    /* display: inline; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* position: absolute; */
+    position: -webkit-sticky;
+    position: sticky;
+    width: 100dvw;
+    height: 100px;
+    /* margin-left: 600px-200px; */
+    /* left: 983px; */
+    padding: 10px;
+    top: 0;
+    /* z-index: 100x    0   ; */
+
+    background: linear-gradient(0deg, #EF98A7, #EF98A7), linear-gradient(0deg, #604F71, #604F71), linear-gradient(0deg, #604F71, #604F71), #604F71;
+    border-radius: 25px;
+
+    /* display: inline-block; */
+    /* justify-content: space-between; 
+    align-items: center; 
+    margin: 10px; */
+}
+
+.rect2 {
+    /* display: inline; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* position: absolute; */
+    width: 324px;
+    height: 252px;
+    /* margin-left: 600px-200px; */
+    /* left: 983px;  */
+    /* top: 190px; */
+
+    background: linear-gradient(0deg, #EF98A7, #EF98A7), linear-gradient(0deg, #604F71, #604F71), linear-gradient(0deg, #604F71, #604F71), #604F71;
+    border-radius: 25px;
+
+    /* display: inline-block; */
+    /* justify-content: space-between; 
+    align-items: center; 
+    margin: 10px; */
+}
+
+.rect3 {
+    /* display: inline; */
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    /* position: absolute; */
+    width: 324px;
+    height: 252px;
+    /* margin-left: 600px; */
+    /* left: 983px; */
+    /* top: 190px; */
+
+    background: linear-gradient(0deg, #EF98A7, #EF98A7), linear-gradient(0deg, #604F71, #604F71), linear-gradient(0deg, #604F71, #604F71), #604F71;
+    border-radius: 25px;
+
+    /* display: inline-block; */
+    /* justify-content: space-between;  */
+    /* align-items: center;  */
+    /* margin: 10px; */
 }
