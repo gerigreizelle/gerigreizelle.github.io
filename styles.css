@@ -39,6 +39,11 @@ body {
     animation: slideRight 1s ease forwards;
 }
 
+.logo:hover {
+    text-shadow: 0 0 20px #EF98A7;   
+    font-size: 28px;
+}
+
 .navbar a {
     font-family: 'Inter', sans-serif;
     font-size: 18px;
@@ -73,25 +78,31 @@ button.b1:hover {
 }
 
 .home {
-    position: relative;
-    width: 100%;
+    background-color: #604F71;
+    /* position: relative; */
     height: 100vh;
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    padding: 10px 20% 0;
+    /* align-items: center; */
+    /* padding: 20% 10px; */
+    padding-left: 140px;
+    padding-right: 50px;
 }
 
+
 .home_content {
-    position: relative;
-    top: 0rem;
-    max-width: 600px;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #604F71;
+    position: static;
     align-content: center;
 }
 
-.home_content h3 {
+.home_content  h3 {
     font-family: 'Lato', sans-serif;
-    margin-left: -8rem;
+    /* margin-left: -8rem; */
     color: white;
     font-size: 32px;
     font-weight: bolder;
@@ -104,57 +115,41 @@ button.b1:hover {
     font-weight: bolder;
 }
 
-.home_content h3:nth-of-type(2) {
-    margin-bottom: 30px;
-}
-
 
 .home_content h1 {
-    margin-left: -8rem;
+    font-family: 'Abril Fatface', serif;
     color: #EF98A7;
     font-size: 88px;
     font-weight: normal;
 }
 
-
+/* .home_photo {
+    padding-right: 20px;
+    background-color: aqua; 
+} */
 
 .home_photo img {
     position: relative;
+    display: flex;
     border-radius: 100%;
-    top: -5rem;
     max-width: 405px;
-    margin-right: -10rem;
     width: auto;
     height: auto;
     background-color: #F7BEA9;
     box-shadow: 0 0 65px #F7BEA9;
-    border-radius: 50%;
+    margin-top: 150px;
+    margin-right: 100px;
 }
 
-.socmed a {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    width: 40px;
-    height: 40px;
-    background: transparent;
-    border: 2px solid #EF98A7;
-    border-radius: 50%;
-    font-size: 25px;
-    color: #EF98A7  ;
-    text-decoration: none;
-    margin-left: 30px 15px 30px;
-    transition: all 0.3s ease 0s;
-    /* box-shadow: inset 0 0 10px #EF98A7; */
+.home_photo img:hover {
+    box-shadow: 0 0 75px #F7BEA9;
+    box-shadow: 0 0 100px #F7BEA9;
 }
 
-.socmed a:hover {
-    background: #EF98A7;
-    color: #604F71;
-}
 
-.resume_dl {
-    margin-left: -8rem;
+
+button.resume_dl {
+    font-family: 'Inter', sans-serif;
     display: inline-block;
     padding: 12px 28px;
     background: transparent;
@@ -165,13 +160,14 @@ button.b1:hover {
     transition: 0.3 ease 0s;
 }
 
-.resume_dl:hover {
-    background-color: #F7BEA9;
-    color: #3f2a44;
+button.resume_dl:hover {
+    background-color: #EF98A7;
+    color: #604F71;
 }
 
+
 .about {
-    background-color: #604F71;
+    background-color: #807094;
     position: relative;
     width: 100%;
     height: 100vh;
@@ -182,36 +178,44 @@ button.b1:hover {
 }
 
 .about_content {
+    /* background-color: blue; */
     position: absolute;
     justify-content: space-between;
+    align-items: center;
+    align-content: center;
     max-width: 600px;
     align-content: center;
 }
 
-.about_content h1 {
+.about_content .about_me {
+    padding: 10px;
+    /* background-color: aqua; */
+}
+
+.about_content .about_me h1 {
     color: white;
     font-family: 'Abril Fatface', serif;
     font-size: 32px;
 }
 
-.about_content h1 span {
+.about_content .about_me h1 span {
     color: #EF98A7;
     font-family: 'Abril Fatface', serif;
     font-size: 32px;
 }
 
-.about_content p {
+.about_content .about_me p {
     font-family: 'Lato', sans-serif;
     font-size: 20;
     
 }
 
-.about_content img {
+.about_content .about_photo {
+    /* background-color: aqua; */
     position: relative;
-    border-radius: 100%;
-    top: -5rem;
+    top: 70px;
     max-width: 405px;
-    margin-right: -10rem;
+    margin: -15rem; 
     width: auto;
     height: auto;
 }
@@ -244,7 +248,7 @@ button.b1:hover {
     width: 50px;
 }
 
-h1 {
+/* h1 {
     font-family: 'Abril Fatface', serif;
 }
 
@@ -254,4 +258,4 @@ p {
 
 h2 {
     font-family: 'Inter', sans-serif;
-}
+} */
