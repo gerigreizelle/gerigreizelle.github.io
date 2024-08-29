@@ -26,7 +26,7 @@ body {
 .work_container {
     color: #ffff;
     background-color: #604F71;
-    min-height: 100vh;
+    min-height: auto;
     max-width: 1200px;
     margin: auto;
     padding: 1rem;
@@ -52,7 +52,6 @@ body {
     display: grid;
     text-align: center;
     width: 100%;
-    margin-bottom: 2rem;
 }
 
 .works_header h1 {
@@ -69,14 +68,14 @@ body {
 }
 
 .card_container2 { 
+    padding-top: 5rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    /* gap: 10px; */
 }
 
 .card_container1, .card_container3 {
-    margin-top: 7rem;
+    padding-bottom: -3rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -136,3 +135,104 @@ body {
     transition: all 0.3s ease;
 }
 
+@media (max-width: 768px) {
+    .work_content {
+        grid-template-columns: 1fr;
+        height: auto;
+    }
+
+    .works_header h1 {
+        font-size: 36px;
+    }
+
+    .card {
+        height: auto;
+        width: 100%;
+    }
+
+    .card img {
+        height: 200px;
+    }
+
+    .card h2 {
+        font-size: 24px;
+    }
+}
+
+
+@media (min-width: 769px) and (max-width: 991px) {
+    .work_content {
+        grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .works_header h1 {
+        font-size: 40px;
+    }
+
+    .card {
+        height: auto;
+        width: 100%;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+    .card h2 {
+        font-size: 26px;
+    }
+}
+
+
+@media (min-width: 992px) {
+    .work_content {
+        grid-template-columns: repeat(3, 1fr);
+        height: auto;
+    }
+
+    .works_header h1 {
+        font-size: 50px;
+    }
+
+    .card {
+        height: 390px;
+        width: 300px;
+    }
+
+    .card img {
+        height: 300px;
+    }
+
+    .card h2 {
+        font-size: 30px;
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .work_container {
+        max-width: 1400px;
+    }
+
+    .work_content {
+        height: auto;
+    }
+
+    .works_header h1 {
+        font-size: 60px;
+    }
+
+    .card {
+        height: 400px;
+        width: 360px;
+    }
+
+    .card img {
+        height: 320px;
+    }
+
+    .card h2 {
+        font-size: 32px;
+    }
+}

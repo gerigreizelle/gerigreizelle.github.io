@@ -124,8 +124,8 @@ ul li .git:hover {
 
 
 ul li a:hover {
-    border-top-color: #EF98A7;
-    border-bottom-color: #EF98A7;
+    /* border-top-color: #EF98A7;
+    border-bottom-color: #EF98A7; */
     color: #F7BEA9;
 }
 
@@ -134,7 +134,7 @@ ul li a:hover {
 }
 
 
-@media (width < 750px) {
+@media (max-width: 768px) {
     nav .checkbox {
         display: block;
     }

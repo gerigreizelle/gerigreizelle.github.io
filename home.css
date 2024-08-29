@@ -35,6 +35,7 @@ body {
 }
 
 .home_content {
+    padding-top: 7rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -80,7 +81,7 @@ body {
     font-family: 'Inter', sans-serif;
     margin-top: 3rem;
     color: #ffff;
-    font-size: 1rem;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 2px;
     padding: 1rem 2rem;
@@ -101,6 +102,7 @@ body {
 }
 
 .image {
+    padding-top: 7rem;
     display: grid;
     place-items: center;
 }
@@ -110,17 +112,17 @@ body {
     border-radius: 100%;
     background-color: #F7BEA9;
     box-shadow: 0 0 75px #F7BEA9;
-    transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease;
 }
 
 .image img:hover {
     box-shadow: 0 0 75px #F7BEA9;
     box-shadow: 0 0 100px #F7BEA9;
-    width: min(33rem,  90%);
-    transition: all 0.3s ease-in-out;
+    width: min(35rem,  90%);
+    transition: all 0.3s ease;
 }
 
-@media (width < 750px) {
+@media (max-width: 768px) {
     .home_container {
         width: 100%;
         padding: 3rem 1rem;
@@ -132,6 +134,7 @@ body {
         grid-area: 1/1/2/2;
         max-width: 100%;
         height: auto;
+        margin-top: 3rem;
     }
 
     .image img {
@@ -149,7 +152,7 @@ body {
     .home_content h3 {
         font-family: 'Lato', sans-serif;
         color: white;
-        font-size: 30px;
+        font-size: 26px;
         font-weight: bolder;
         line-height: 2rem;
         margin-top: 3rem;
@@ -179,5 +182,51 @@ body {
 
     .resume {
         margin: auto;
+    }
+}
+
+@media (max-width: 320px) {
+    .image {
+        /* grid-area: 1/1/2/2; */
+        padding-top: 1rem;
+        max-width: 90%;
+        height: auto;
+        margin-top: 3rem;
+    }
+
+    .image img {
+        width: auto;
+        margin-top: 1rem;
+    }
+
+    .home_content {
+        padding-top: none;
+        padding-top: 1rem;
+    }
+
+    .home_content .hi {
+        text-align: center;
+        margin-top: 0rem;
+        margin-bottom: 1rem;
+        font-size: 30px;
+    }
+    
+    
+    .home_content h1 {
+        text-align: center;
+        font-size: 45px;
+        font-weight: normal;
+        line-height: 3.5rem;
+    }
+    
+    .button {
+        padding-top: 0rem;
+    }
+
+    .resume {
+        margin: auto;
+        padding-top: 2rem;
+        padding: 0.5rem 1rem;
+        font-size: 12px;
     }
 }

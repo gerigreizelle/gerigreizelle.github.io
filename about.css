@@ -27,9 +27,11 @@ body {
 }
 
 .about_content {
+    padding-top: 2.5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
 }
 
 .about_content h1 {
@@ -83,11 +85,15 @@ body {
     font-size: 20px;
     display: flex;
     margin-top: 5px;
+    margin-left: 11rem;
 }
 
-@media (width < 750px) {
+.about_content p span {
+    color: #EF98A7;
+}
+
+@media (max-width: 768px) {
     .about_container {
-        padding: 10rem 1rem 5rem 1rem;
         text-align: center;
         grid-template-columns: repeat(1, 1fr);
     }
@@ -96,7 +102,29 @@ body {
         display: none;
     }
 
-    .resume {
-        margin: auto;
+
+    .timeline-item h3, .timeline-item h3 span {
+        font-size: 20px;
     }
+
+    .timeline p {
+        margin-left: 5rem;
+    }
+
+    .about_content p {
+        font-size: 20px;
+    }
+}
+
+@media (max-width:320px) {
+    .timeline p {
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .about_content {
+        padding: 0;
+    }
+
+
 }
