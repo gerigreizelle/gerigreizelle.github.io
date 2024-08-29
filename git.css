@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&family=Lato:wght@400;700&family=Abril+Fatface&family=Inter:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    width: 100%;
+    overflow-x: hidden;
+    font-family: 'Lato', sans-serif;
+}
+
+.git {
+    background-color: #604F71;
+}
+
+.git_container {
+    color: #ffff;
+    background-color: #604F71;
+    min-height: 100vh;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.git_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.git_content h1{
+    font-family: 'Abril Fatface', serif;
+    font-size: 50px;
+    text-align: center;
+    font-weight: normal;
+    padding-top: 3rem;
+}
+
+.git_content h1 span {
+    font-family: 'Abril Fatface', serif;
+    color: #EF98A7;
+}
+
+.contact {
+    box-shadow: 0 3px 5px rgb(55, 45, 65);
+    background-color: #807094;
+    padding: 2rem;
+    border-radius: 30px;
+    height: 400px; 
+    width: 820px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact_info {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    height: 3rem;
+}
+
+.contact input, .contact textarea {
+    font-family: 'Inter', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    width: 100%;
+    bottom: 15px;
+    padding: 10px;
+    border-radius: 10px;
+    border: transparent;
+}
+
+.contact input:focus, .contact textarea:focus {
+    border: 2px solid #3f3449;
+    outline: none;
+}
+
+.contact textarea {
+    height: 200px;
+    resize: none;
+}
+
+.contact button {
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    background-color: #F7BEA9;
+    font-size: 18px;
+    color: #606060;
+    border: none;
+    font-size: 18px;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 2rem;
+    letter-spacing: 2px;
+    padding: 1rem 5rem;
+    outline: none;
+    cursor: pointer;
+    transition: all 0.3 ease;
+}
+
+.contact button:hover {
+    background-color: #EF98A7;
+    color: #ffff;
+    transition: all 0.3s ease;
+    transform: translateY(0.5rem);
+}

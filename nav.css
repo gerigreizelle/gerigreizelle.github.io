@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400;700&family=Lato:wght@400;700&family=Abril+Fatface&family=Inter:wght@400;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #604F71;    
+    font-family: 'Sen', sans-serif;
+    color: white;
+    overflow-x: hidden;
+}
+
+nav {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #604F71;
+    box-shadow: 0 3px 5px #807094;
+    z-index: 1000;
+    opacity: 0.95;
+}
+
+.nav__content {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 1rem; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+nav .logo a {
+    font-size: 25px;
+    color: white;
+    font-family: 'Sen', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: default;
+    animation: slideRight 1s ease forwards;
+}
+
+nav .logo a span {
+    font-size: 25px;
+    color: #EF98A7;
+    font-family: 'Sen', sans-serif;
+    text-decoration: none;
+    font-weight: 700;
+    cursor: default;
+    animation: slideRight 1s ease forwards;
+    transition: 0.3s ease 0s
+}
+
+nav .logo a:hover {
+    text-shadow: 15px 0 20px #EF98A7;   
+    font-size: 26px;
+    transition: 0.3s ease 0s;
+}
+
+nav .checkbox {
+    display: none;
+}
+
+nav input {
+    display: none;
+}
+
+nav .checkbox i {
+    font-size: 2rem;
+    color: #ffff;
+    cursor: pointer;
+}
+
+ul {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    list-style: none;
+    transition: left 0.3s;
+}
+
+
+ul li a {
+    padding: 0.5rem 1rem;
+    border: 2px solid transparent;
+    text-decoration: none;
+    font-weight: 600;
+    color: #ffffff;
+    transition: 0.3s;
+    font-family: 'Inter', sans-serif;
+}
+
+ul li .git {
+    padding: 0.5rem 1rem;
+    background-color: #F7BEA9;
+    text-decoration: none;
+    font-weight: 600;
+    color: #604F71;
+    transition: 0.3s;
+    border-radius: 30px;
+}
+
+ul li .git:hover {
+    background-color: #EF98A7;
+    color: #ffff;    
+    transition: all 0.3s ease-in-out;
+}
+
+
+ul li a:hover {
+    border-top-color: #EF98A7;
+    border-bottom-color: #EF98A7;
+    color: #F7BEA9;
+}
+
+#check {
+    display: none;
+}
+
+
+@media (width < 750px) {
+    nav .checkbox {
+        display: block;
+    }
+
+    ul {
+        display: none;
+        position: absolute;
+        width: 100%;
+        height: calc(100vh - 85px);
+        left: -100%;
+        top: 85px;
+        background-color: #604F71;
+        flex-direction: column;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    #check:checked ~ ul {
+        display: block;
+    }
+
+    #check:checked + .checkbox span:nth-child(1) {
+        transform: rotate(45deg) translateY(8px);
+    }
+
+    #check:checked + .checkbox span:nth-child(2) {
+        opacity: 0;
+    }
+
+    #check:checked + .checkbox span:nth-child(3) {
+        transform: rotate(-45deg) translateY(-8px);
+    }
+
+    nav #check:checked ~ ul {
+        left: 0;
+    }
+
+    ul li a {
+        font-size: 1.25rem;
+        line-height: 5rem;
+    }
+
+    ul li a:hover {
+        font-size: 1.25rem;
+        line-height: 5rem;
+        background-color: #F7BEA9;
+        color: #604F71;
+    }
+
+    ul li .git {
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+        color: #ffff;
+    }
+
+    ul li .git:hover {
+        padding: 0.5rem 1rem;
+        background-color: transparent;
+        color: #ffff;
+    }
+}
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
