@@ -250,7 +250,7 @@ footer {
 
 
 ::-webkit-scrollbar {
-    width: 15px;
+    width: 10px;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -258,6 +258,6 @@ footer {
 }
 
 ::-webkit-scrollbar-track {
-    background-color: #604F71;
+    background-color: transparent;
     width: 50px;
 }
