@@ -18,75 +18,59 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-optical-sizing: auto;
+}
+
+.posters {
     background-color: #807094;
+    display: grid;
+    width: 100%;
+    justify-content: center;
 }
 
-.work {
-    background-color: #604F71;
+.poster_container {
+    background-color: #807094;
+    padding: 2rem;
+    padding-top: 10rem;
 }
 
-.work_container {
-    color: #ffff;
-    background-color: #604F71;
-    min-height: auto;
-    max-width: 1200px;
-    margin: auto;
-    padding: 1rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 2rem;
-}
-
-.work_content {
+.poster_content {
     display: grid;
     grid-template-columns: repeat(3, 1fr) ;
     /* justify-items: center; */
     gap: 2rem;
     max-width: 1200px;
     width: 100%;
-    height: 100vh;
+    height: auto;
 }
 
-.works_header {
-    margin-top: 5rem;
-    display: grid;
-    text-align: center;
+.poster_header {
+    padding-top: -10rem;
     width: 100%;
+    text-align: left;
 }
 
-.works_header h1 {
+.poster_header h1 {
     font-weight: normal;
-    margin: 0;
-    font-family: 'Abril Fatface', serif;
+    font-family: 'Lato', sans-serif;
     font-size: 50px;
-    text-align: center;
+    font-weight: bold;
+    text-align: left;
 }
 
-.works_header h1 span {
-    color: #EF98A7;
-    font-family: 'Abril Fatface', serif;
-}
 
-.card_container2 { 
-    padding-top: 3rem;
+
+.pc_container {
+    padding-top: 0rem;
+    padding-bottom: 6rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
 }
 
-.card_container1, .card_container3 {
-    padding-top: -3rem;
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    /* gap: 10px; */
-}
 
-
-.card {
-    box-shadow: 0 3px 5px rgb(55, 45, 65);
-    background-color: #807094;
+.poster_card {
+    background-color: transparent;
+    border: 3px solid #604F71;
     padding: 30px 20px;
     border-radius: 30px;
     height: 390px; 
@@ -99,147 +83,139 @@ body {
 }
 
 
-.card img {
+
+.poster_card img {
     margin-bottom: 2rem;
     width: 100%;
     height: 300px;
     object-fit: cover;
     border-radius: 20px;
+    max-width: 100%;
 }
 
-.card h2 {
+.poster_card p {
+    color: #EF98A7;
     font-family: 'Lato', sans-serif;
-    font-size: 30px;
-    text-align: center;
-    font-weight: bold;
-}
-
-.card .sm {
-    padding: 0.7rem 1.5rem;
-    background-color: #F7BEA9;
-    text-decoration: none;
-    font-weight: 600;
-    color: #604F71;
-    border-radius: 30px;
     font-size: 18px;
     text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    border: transparent;
+    font-weight: normal;
 }
 
-.card:hover {
+.poster_card:hover {
     background-color: #604F71;
     transform: translateY(0.5rem);
     transition: all 0.3s ease;
     box-shadow: 0 0 75px #EF98A7;
 }
 
-.card_content .sm:hover {
-    background-color: #EF98A7;
-    color: #ffff;    
-    /* transform: translateY(0.5rem); */
-    transition: all 0.3s ease;
-}
 
 @media (max-width: 768px) {
-    .work_content {
+    .poster_content {
         grid-template-columns: 1fr;
         height: auto;
+        gap: 0;
     }
 
-    .works_header h1 {
+    .pc_container {
+        padding-top: 1rem;
+        padding-bottom: 0;
+    }
+
+    .poster_header h1 {
         font-size: 36px;
     }
 
-    .card {
+    .poster_card {
         height: auto;
         width: 100%;
     }
 
-    .card img {
+    .poster_card img {
         height: 200px;
     }
 
-    .card h2 {
+    .poster_card p {
         font-size: 24px;
     }
 }
 
 
 @media (min-width: 769px) and (max-width: 991px) {
-    .work_content {
+    .poster_content {
         grid-template-columns: repeat(2, 1fr);
         height: auto;
     }
 
-    .works_header h1 {
+    .poster_header h1 {
         font-size: 40px;
     }
 
-    .card {
+    .poster_card {
         height: auto;
         width: 100%;
     }
 
-    .card img {
+    .poster_card img {
         height: 250px;
     }
 
-    .card h2 {
+    .poster_card p {
         font-size: 26px;
     }
 }
 
 
 @media (min-width: 992px) {
-    .work_content {
+    .poster_content {
         grid-template-columns: repeat(3, 1fr);
         height: auto;
     }
 
-    .works_header h1 {
+    .poster_header h1 {
         font-size: 50px;
     }
 
-    .card {
+    .poster_card {
         height: 390px;
         width: 300px;
     }
 
-    .card img {
+    .poster_card img {
         height: 300px;
     }
 
-    .card h2 {
+    .poster_card p {
         font-size: 30px;
     }
 }
 
 
 @media (min-width: 1200px) {
-    .work_container {
+    .body {
+        background-color: #807094;
+    }
+    .poster_container {
         max-width: 1400px;
     }
 
-    .work_content {
+    .poster_content {
         height: auto;
     }
 
-    .works_header h1 {
+    .poster_header h1 {
         font-size: 60px;
     }
 
-    .card {
+    .poster_card {
         height: 400px;
         width: 360px;
     }
 
-    .card img {
+    .poster_card img {
         height: 320px;
     }
 
-    .card h2 {
-        font-size: 32px;
+    .poster_card p {
+        font-size: 28px;
     }
 }
