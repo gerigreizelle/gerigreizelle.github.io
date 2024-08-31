@@ -144,7 +144,7 @@ body {
     }
 
     .image img {
-        max-width: 100%;
+        max-width: 70%;
         width: auto;
         margin-top: 1rem;
     }
@@ -195,9 +195,9 @@ body {
 @media (max-width: 320px) {
     .home_container {
         background-color: #604F71;
-        width: 100%;
+        width: 90%;
         padding: 1rem 1rem;
-        padding-top: 0;
+        padding-top: 1rem;
         text-align: center;
         grid-template-columns: 1fr;
         gap: 0rem;
