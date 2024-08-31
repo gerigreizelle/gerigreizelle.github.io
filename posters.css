@@ -25,12 +25,13 @@ body {
     display: grid;
     width: 100%;
     justify-content: center;
+    height: 100vh;
 }
 
 .poster_container {
     background-color: #807094;
     padding: 2rem;
-    padding-top: 10rem;
+    align-self: center;
 }
 
 .poster_content {

@@ -17,6 +17,8 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-optical-sizing: auto;
+    height: 100vh;
+    justify-content: center;
 }
 
 .skills {

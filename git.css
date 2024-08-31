@@ -106,7 +106,6 @@ body {
     font-weight: bold;
     background-color: #F7BEA9;
     font-size: 18px;
-    color: #606060;
     border: none;
     font-size: 18px;
     border-radius: 30px;
@@ -117,6 +116,10 @@ body {
     outline: none;
     cursor: pointer;
     transition: all 0.3 ease;
+}
+
+.contact button a {
+    color: #604F71;
 }
 
 .contact button:hover {
@@ -130,6 +133,11 @@ body {
     .git_container {
         padding: 0.5rem;
         gap: 1rem;
+    }
+
+    .git_content {
+        grid-template-columns: 1fr;
+        height: auto;
     }
 
     .git_container h1 {
@@ -166,6 +174,7 @@ body {
 
 
 @media (min-width: 768px) and (max-width: 991px) {
+
     .git_container {
         padding: 1rem;
         gap: 1.5rem;

@@ -115,7 +115,7 @@ body {
 }
 
 
-.card .sm {
+.card .sm, .card .sm a {
     padding: 0.7rem 1.5rem;
     background-color: #F7BEA9;
     text-decoration: none;

@@ -24,12 +24,13 @@ body {
     display: grid;
     width: 100%;
     justify-content: center;
+    height: 100vh;
 }
 
 .cp_container {
     background-color: #807094;
     padding: 2rem;
-    padding-top: 7rem;
+    align-self: center;
 }
 
 .cp_content {
@@ -97,6 +98,11 @@ body {
     font-size: 18px;
     text-align: center;
     font-weight: normal;
+}
+
+.cp_card p span {
+    color: #ffff;
+    font-size: 20px;
 }
 
 .cp_card:hover {
