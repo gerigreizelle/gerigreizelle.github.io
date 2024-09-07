@@ -26,6 +26,7 @@ body {
     width: 100%;
     justify-content: center;
     height: 100vh;
+    padding-top: 5rem;
 }
 
 .poster_container {
@@ -37,7 +38,6 @@ body {
 .poster_content {
     display: grid;
     grid-template-columns: repeat(3, 1fr) ;
-    /* justify-items: center; */
     gap: 2rem;
     max-width: 1200px;
     width: 100%;
@@ -45,13 +45,10 @@ body {
 }
 
 .poster_header {
-    padding-top: -10rem;
     width: 100%;
-    text-align: left;
 }
 
 .poster_header h1 {
-    font-weight: normal;
     font-family: 'Lato', sans-serif;
     font-size: 50px;
     font-weight: bold;
@@ -86,7 +83,6 @@ body {
 
 
 .poster_card img {
-    margin-bottom: 2rem;
     width: 100%;
     height: 300px;
     object-fit: cover;
@@ -110,7 +106,14 @@ body {
 }
 
 
-@media (max-width: 768px) {
+
+
+@media (max-width: 767px) {
+    .posters {
+        height: auto;
+        padding-top: 3rem;
+    }
+
     .poster_content {
         grid-template-columns: 1fr;
         height: auto;
@@ -141,9 +144,19 @@ body {
 }
 
 
-@media (min-width: 769px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 991px) {
+    .posters {
+        height: auto;
+        padding-top: 3rem;
+    }
+
     .poster_content {
         grid-template-columns: repeat(2, 1fr);
+        height: auto;
+    }
+
+    .pc_container {
+        padding-bottom: 0.5rem;
         height: auto;
     }
 
@@ -167,6 +180,11 @@ body {
 
 
 @media (min-width: 992px) {
+    .posters {
+        height: 100vh;
+        padding-top: 3rem;
+    }
+
     .poster_content {
         grid-template-columns: repeat(3, 1fr);
         height: auto;
@@ -195,6 +213,12 @@ body {
     .body {
         background-color: #807094;
     }
+
+    .posters {
+        height: auto;
+        padding-top: 3rem;
+    }
+
     .poster_container {
         max-width: 1400px;
     }
@@ -218,5 +242,11 @@ body {
 
     .poster_card p {
         font-size: 28px;
+    }
+}
+
+@media (min-width: 1440px){
+    .posters {
+        height: 100vh;
     }
 }

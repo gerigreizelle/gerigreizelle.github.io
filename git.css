@@ -29,7 +29,7 @@ body {
     min-height: 100vh;
     max-width: 1200px;
     margin: auto;
-    padding: 1rem;
+    padding: 0.5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -42,6 +42,7 @@ body {
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 1rem;
 }
 
 .git_container h1{
@@ -71,16 +72,22 @@ body {
     justify-content: center;
 }
 
+form {
+    height: auto;
+    padding-top: 1rem;
+    width: 100%;
+}
+
 .contact_info {
+    padding-top: 0.5rem ;
     width: 100%;
     display: flex;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-bottom: 2rem;
-    height: 3rem;
 }
 
-.contact input, .contact textarea {
+.contact_info input, form textarea {
     font-family: 'Inter', sans-serif;
     font-weight: normal;
     font-size: 18px;
@@ -89,6 +96,7 @@ body {
     padding: 10px;
     border-radius: 10px;
     border: transparent;
+    height: 3rem;
 }
 
 .contact input:focus, .contact textarea:focus {
@@ -101,7 +109,8 @@ body {
     resize: none;
 }
 
-.contact button {
+form button {
+    color: #604F71;
     font-family: 'Inter', sans-serif;
     font-weight: bold;
     background-color: #F7BEA9;
@@ -110,7 +119,7 @@ body {
     font-size: 18px;
     border-radius: 30px;
     cursor: pointer;
-    margin-top: 2rem;
+    margin-top: 1rem;
     letter-spacing: 2px;
     padding: 1rem 5rem;
     outline: none;
@@ -118,9 +127,6 @@ body {
     transition: all 0.3 ease;
 }
 
-.contact button a {
-    color: #604F71;
-}
 
 .contact button:hover {
     background-color: #EF98A7;
@@ -128,6 +134,8 @@ body {
     transition: all 0.3s ease;
     transform: translateY(0.5rem);
 }
+
+
 
 @media (max-width: 767px) {
     .git_container {
@@ -138,6 +146,7 @@ body {
     .git_content {
         grid-template-columns: 1fr;
         height: auto;
+        width: 90%;
     }
 
     .git_container h1 {
@@ -155,6 +164,7 @@ body {
         flex-direction: column;
         gap: 0.5rem;
         height: auto;
+        margin-bottom: 1rem;
     }
 
     .contact input, .contact textarea {
@@ -180,6 +190,10 @@ body {
         gap: 1.5rem;
     }
 
+    .git_content {
+        width: 90%;
+    }
+
     .git_container h1 {
         font-size: 40px;
         padding-top: 2rem;
@@ -188,7 +202,7 @@ body {
     .contact {
         width: 100%;
         height: auto;
-        padding: 1.5rem;
+        padding: 1rem;
     }
 
     .contact_info {
@@ -199,7 +213,7 @@ body {
 
     .contact input, .contact textarea {
         font-size: 17px;
-        padding: 9px;
+        padding: 5px;
     }
 
     .contact textarea {
@@ -217,6 +231,10 @@ body {
     .contact {
         width: 820px;
         height: 400px;
+    }
+
+    .git_content {
+        width: 80%;
     }
 
     .contact_info {

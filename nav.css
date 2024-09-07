@@ -46,6 +46,7 @@ nav {
     justify-content: space-between;
 }
 
+
 nav .logo a {
     font-size: 25px;
     color: white;
@@ -175,14 +176,15 @@ footer {
 @media (max-width: 768px) {
     nav .checkbox {
         display: block;
+        font-size: 30px;
     }
 
     ul {
         display: none;
         position: absolute;
-        width: 100%;
+        width: 50%;
         height: calc(100vh - 85px);
-        left: -100%;
+        right: -100%;
         top: 85px;
         background-color: #604F71;
         flex-direction: column;
@@ -207,7 +209,11 @@ footer {
     }
 
     nav #check:checked ~ ul {
-        left: 0;
+        right: 0;
+    }
+
+    ul li {
+        text-align: center;
     }
 
     ul li a {
@@ -215,7 +221,7 @@ footer {
         line-height: 5rem;
     }
 
-    ul li a:hover {
+    ul li a:hover, ul li:hover {
         font-size: 1.25rem;
         line-height: 5rem;
         background-color: #F7BEA9;
@@ -254,10 +260,9 @@ footer {
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: #3f2a44;
+    background-color: #EF98A7;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: transparent;
-    width: 50px;
+    background-color: #604F71;
 }

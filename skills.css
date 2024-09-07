@@ -6,6 +6,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Lato', sans-serif;
+    font-optical-sizing: auto;
 }
 
 html {
@@ -17,8 +18,6 @@ body {
     width: 100%;
     overflow-x: hidden;
     font-optical-sizing: auto;
-    height: 100vh;
-    justify-content: center;
 }
 
 .skills {
@@ -30,17 +29,19 @@ body {
 
 .skills_container {
     background-color: #EF98A7;
-    padding: 1rem;
+    padding: 2rem;
     padding-top: 5rem;
-}
+    align-self: center;
+    height: 100vh;
 
+}
 
 .skills_content {
     display: grid;
-    grid-template-columns: repeat(3, 1fr) ;
+    grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
-    max-width: 1200px;
     width: 100%;
+    max-width: 1200px;
     height: auto;
 }
 
@@ -49,19 +50,13 @@ body {
 }
 
 .skills_header h1 {
-    font-weight: normal;
-    margin: 0;
+    font-weight: bold;
     font-family: 'Lato', sans-serif;
     font-size: 50px;
-    font-weight: bold;
     text-align: left;
 }
 
-
-
 .sc_container {
-    padding-top: 1rem;
-    padding-bottom: 1rem;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
@@ -70,10 +65,10 @@ body {
 .skills_card {
     background-color: transparent;
     border: 3px solid #604F71;
-    padding: 30px 20px;
+    padding: 30px 40px;
     border-radius: 30px;
-    height: 390px; 
-    width: 350px;
+    height: auto;
+    width: 100%;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -81,29 +76,36 @@ body {
     justify-content: space-between;
 }
 
-
-
 .skills_card img {
-    /* background-color: aqua; */
-    /* margin-bottom: 2rem; */
     width: 100%;
-    height: 50px;
-    object-fit: contain;
-    border-radius: 20px;
+    height: 300px;
+    object-fit: cover;
     max-width: 100%;
 }
 
+.skills_card .canva {
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+}
 
 .skills_card:hover {
-    color: #ffff;
     background-color: #604F71;
     transform: translateY(0.5rem);
     transition: all 0.3s ease;
     box-shadow: 0 0 75px #604F71;
 }
 
+@media (max-width: 767px) {
+    .skills {
+        height: auto;
+        padding-top: 3rem;
+    }
 
-@media (max-width: 768px) {
+    .skills_container {
+        height: auto;
+    }
+
     .skills_content {
         grid-template-columns: 1fr;
         height: auto;
@@ -113,6 +115,7 @@ body {
     .sc_container {
         padding-top: 1rem;
         padding-bottom: 0;
+        height: auto;
     }
 
     .skills_header h1 {
@@ -127,14 +130,28 @@ body {
     .skills_card img {
         height: 200px;
     }
-
-
 }
 
+@media (min-width: 768px) and (max-width: 991px) {
+    .skills {
+        height: auto;
+        padding-top: 5rem;
+        padding-bottom: 2rem;
+    }
 
-@media (min-width: 769px) and (max-width: 991px) {
     .skills_content {
         grid-template-columns: repeat(2, 1fr);
+        height: auto;
+
+    }
+
+    .skills_container {
+        padding: 0;
+        padding-top: 0;
+        height: auto;
+    }
+
+    .sc_container {
         height: auto;
     }
 
@@ -150,14 +167,20 @@ body {
     .skills_card img {
         height: 250px;
     }
-
-    
 }
 
-
 @media (min-width: 992px) {
+    .skills {
+        height: auto;
+        padding-top: 0;
+    }
+
     .skills_content {
         grid-template-columns: repeat(3, 1fr);
+        height: auto;
+    }
+
+    .skills_container {
         height: auto;
     }
 
@@ -166,25 +189,39 @@ body {
     }
 
     .skills_card {
-        height: 390px;
-        width: 300px;
+        height: auto;
+        width: 100%;
     }
 
     .skills_card img {
-        height: 300px;
+        height: auto;
     }
-
-
 }
 
 
 @media (min-width: 1200px) {
+    .body {
+        background-color: #807094;
+    }
+
+    .skills {
+        height: auto;
+        padding-top: 0;
+    }
+
     .skills_container {
         max-width: 1400px;
+        height: auto;
+    }
+
+    .sc_container {
+        height: auto;
+        padding-bottom: 0.5rem;
     }
 
     .skills_content {
         height: auto;
+        padding-top: 0;
     }
 
     .skills_header h1 {
@@ -192,12 +229,31 @@ body {
     }
 
     .skills_card {
-        height: 400px;
-        width: 360px;
+        height: 231px;
+        width: 100%;
+        padding: 10px 30px;
     }
 
     .skills_card img {
-        height: 320px;
+        height: 200px;
+    }
+}
+
+
+@media (min-width: 1440px) {
+    .body {
+        background-color: #EF98A7;
     }
 
+    .skills {
+        height: 120vh;
+        padding-bottom: 2rem;
+    }
 }
+
+@media (min-width: 2000px) {
+    .skills {
+        height: 100vh;
+    }
+}
+

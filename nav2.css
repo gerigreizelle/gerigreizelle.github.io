@@ -52,6 +52,10 @@ nav {
     justify-content: center;
 }
 
+.nav2 .checkbox2 {
+    display: none;
+}
+
 
 .nav2 ul {
     display: flex;
@@ -76,12 +80,6 @@ ul li a {
 
 
 
-ul li a:hover {
-    border-top-color: #EF98A7;
-    border-bottom-color: #EF98A7;
-    color: #F7BEA9;
-}
-
 footer {
     font-family: 'Lato', sans-serif;
     text-align: center;
@@ -90,51 +88,22 @@ footer {
     color: #fff;
 }
 
-.soc-med {
-    display: flex;
-    justify-content: center;
-}
-
-.soc-med a i{
-    text-decoration: none;
-    padding: 10px;
-    background-color: transparent;
-    margin: 10px;
-    border-radius: 100%;
-    border: 2px solid #EF98A7; 
-    font-size: 30px;
-    color: #EF98A7;
-
-}
-
-
-.soc-med a i:hover {
-    color: #604F71;
-    background-color: #EF98A7;
-    transform: translateY(-0.5rem);
-    transition: all 0.3s ease;
-    box-shadow: 0 0 25px #F7BEA9
-}
-
-.soc-med a i::after {
-    color: #3f2a44;
-    border: 2px solid #3f2a44;
-}
-
 
 @media (max-width: 768px) {
-    nav .checkbox {
+    .nav2 .checkbox2 {
         display: block;
+        font-size: 30px;
     }
+
 
     ul {
         display: none;
         position: absolute;
-        width: 100%;
+        width: 50%;
         height: calc(100vh - 85px);
-        left: -100%;
+        right: -100%;
         top: 85px;
-        background-color: #604F71;
+        background-color: #807094;
         flex-direction: column;
         justify-content: center;
         gap: 3rem;
@@ -157,7 +126,19 @@ footer {
     }
 
     nav #check:checked ~ ul {
-        left: 0;
+        right: 0;
+    }
+
+    ul li{
+        align-items: center;
+        text-align: center;
+    }
+
+    ul li:hover {
+        font-size: 1.25rem;
+        line-height: 5rem;
+        background-color: #F7BEA9;
+        color: #604F71;
     }
 
     ul li a {
@@ -165,25 +146,13 @@ footer {
         line-height: 5rem;
     }
 
-    ul li a:hover {
-        font-size: 1.25rem;
-        line-height: 5rem;
-        background-color: #F7BEA9;
-        color: #604F71;
-    }
-
-    ul li .git {
-        padding: 0.5rem 1rem;
-        background-color: transparent;
-        color: #ffff;
-    }
-
-    ul li .git:hover {
-        padding: 0.5rem 1rem;
-        background-color: transparent;
-        color: #ffff;
+    footer {
+        text-align: center;
+        
     }
 }
+
+
 
 
 @keyframes slideRight {
