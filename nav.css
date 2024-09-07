@@ -176,7 +176,7 @@ footer {
 @media (max-width: 768px) {
     nav .checkbox {
         display: block;
-        font-size: 30px;
+        font-size: 25px;
     }
 
     ul {
@@ -217,7 +217,7 @@ footer {
     }
 
     ul li a {
-        font-size: 1.25rem;
+        font-size: 1rem;
         line-height: 5rem;
     }
 
