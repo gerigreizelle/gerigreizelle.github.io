@@ -197,6 +197,9 @@ body {
 }
 
 @media (max-width: 320px) {
+    .home {
+        height: auto;
+    }
     .home_container {
         background-color: #604F71;
         width: 90%;
@@ -212,7 +215,7 @@ body {
     }
 
     .image {
-        padding-top: 0.5rem;
+        padding-top: 1rem;
         max-width: 100%;
         justify-content: center;
         height: auto;
@@ -238,9 +241,19 @@ body {
         font-weight: normal;
         line-height: 3.5rem;
     }
+
+    .home_content h3 {
+        font-size: 20px;
+        padding: 0;
+        margin-top: 0;
+    }
+
+    .home_content h3 span {
+        font-size: 20px;
+    }
     
     .button {
-        padding-top: 0rem;
+        padding-top: 1rem;
     }
 
     .resume {
