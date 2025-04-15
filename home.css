@@ -115,6 +115,7 @@ body {
     width: min(28rem, 90%);
     border-radius: 100%;
     /* background-color: #F7BEA9; */
+    background-color: transparent;
     box-shadow: 0 0 75px #F7BEA9;
     transition: all 0.3s ease;
 }
