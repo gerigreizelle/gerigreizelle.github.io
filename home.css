@@ -37,7 +37,7 @@ body {
 
 .home_content {
     padding-top: 7rem;
-    padding-left: ;
+    /* padding-left: ; */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -113,11 +113,11 @@ body {
 }
 
 .image img {
-    width: min(28rem, 90%);
+    /* width: min(28rem, 90%); */
     border-radius: 100%;
     /* background-color: #F7BEA9; */
     background-color: transparent;
-    box-shadow: 0 0 75px #F7BEA9;
+    /* box-shadow: 0 0 75px #F7BEA9; */
     transition: all 0.3s ease;
 }
 
