@@ -113,7 +113,7 @@ body {
 }
 
 .image img {
-    /* width: min(28rem, 90%); */
+    width: min(28rem, 90%);
     border-radius: 100%;
     /* background-color: #F7BEA9; */
     background-color: transparent;
@@ -180,9 +180,6 @@ body {
         margin-bottom: .5rem;
     }
     
-    .home_content .geri {
-        font-size: 70px;
-    }
     
     .home_content h1 .geri {
         font-family: 'Abril Fatface', serif;
