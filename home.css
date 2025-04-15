@@ -66,7 +66,7 @@ body {
 }
 
 
-.home_content h1 {
+.home_content .hi h1 {
     font-family: 'Abril Fatface', serif;
     color: #EF98A7;
     font-size: 80px;
