@@ -179,6 +179,9 @@ body {
         margin-bottom: .5rem;
     }
     
+    .home_content .geri {
+        font-size: 70px;
+    }
     
     .home_content h1 {
         font-family: 'Abril Fatface', serif;
